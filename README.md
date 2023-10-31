@@ -1,67 +1,30 @@
-
-# Setup Docker Para Projetos Laravel (8, 9 ou 10)
-[Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
-
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone https://github.com/especializati/setup-docker-laravel.git
+git clone https://github.com/rahmegm/docker_buffet.git
 ```
 
-Clone os Arquivos do Laravel
+Entrar na pasta a qual foi clonado o Repositório usando o CMD
+
+Entrar na pasta do docker usando o CMD
 ```sh
-git clone https://github.com/laravel/laravel.git app-laravel
+cd docker_buffet
 ```
-
-
-Copie os arquivos docker-compose.yml, Dockerfile e o diretório docker/ para o seu projeto
-```sh
-cp -rf setup-docker-laravel/* app-laravel/
-```
-```sh
-cd app-laravel/
-```
-
 
 Crie o Arquivo .env
 ```sh
-cp .env.example .env
+copy .env.example .env
 ```
-
-
-Atualize as variáveis de ambiente do arquivo .env
-```dosini
-APP_NAME="Especializa Ti"
-APP_URL=http://localhost:8989
-
-DB_CONNECTION=mysql
-DB_HOST=db
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=root
-
-CACHE_DRIVER=redis
-QUEUE_CONNECTION=redis
-SESSION_DRIVER=redis
-
-REDIS_HOST=redis
-REDIS_PASSWORD=null
-REDIS_PORT=6379
-```
-
 
 Suba os containers do projeto
 ```sh
-docker-compose up -d
+docker compose up -d --build
 ```
-
 
 Acessar o container
 ```sh
-docker-compose exec app bash
+docker exec -it app-laravel-app-1 /bin/bash
 ```
-
 
 Instalar as dependências do projeto
 ```sh
@@ -73,7 +36,8 @@ Gerar a key do projeto Laravel
 ```sh
 php artisan key:generate
 ```
-
-
 Acessar o projeto
 [http://localhost:8989](http://localhost:8989)
+
+Acessar o database
+[http://localhost:8090](http://localhost:8090)
