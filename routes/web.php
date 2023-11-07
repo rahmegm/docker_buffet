@@ -22,13 +22,12 @@ Route::get('/contatos', function () {
     return view('contatos');
 });
 
-Route::get('/produtos', function () {
+Route::get('/cardapio', function () {
 
-    $arr = [10,20,30,40,50];
-    $nomes = ['Matheus', 'Maria', 'João', 'Saulo'];
+    $comidas = ['Salgados', 'Bolinhos', 'Brigadeiro, Beijinho'];
 
 
-    return view ('produtos', ['arr'=> $arr], ['nomess' => $nomes]);
+    return view ('cardapio', ['cardapio' => $comidas]);
 });
 
 

@@ -4,8 +4,9 @@
 
 @section ('content')
         <h1> Buffet Magic Castle </h1>
-        <img src="/img/banner.jpg", alt="Banner" width="600px", height="400px">
-  
+        <center>
+        <img src="/img/banner.jpg", alt="Banner" width="1000px", height="600px", align="middle">
+        </center>
         <br>
      
       <a href= /produtos> Nossos Produtos</a>

@@ -29,13 +29,16 @@
                 <a href="/" class="nav-link">Festas</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Cardápio</a>
+                <a href="/cardapio" class="nav-link">Cardápio</a>
             </li>
             <li class="nav-item">
                 <a href="/" class="nav-link">Entrar</a>
             </li>
             <li class="nav-item">
                 <a href="/" class="nav-link">Cadastrar</a>
+                <li class="nav-item">
+                <a href="/decoracoes" class="nav-link">Decorações</a>
+            </li>
             </li>
         </ul>
     </div>
