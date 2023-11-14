@@ -7,6 +7,8 @@
 <p> Você está buscando por: {{ $busca }} </p>
 @endif
 
+@endsection
+
 
 
 

@@ -35,7 +35,7 @@
                 <a href="/" class="nav-link">Entrar</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Cadastrar</a>
+                <a href="/festas/create" class="nav-link">Crie sua Festa</a>
             </li>
         </ul>
     </div>
@@ -47,5 +47,7 @@
     <footer>
         <p>Buffet Magic Castle &copy; 2023</p>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         </body>
 </html>
