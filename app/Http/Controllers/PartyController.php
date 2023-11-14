@@ -3,17 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Reserva;
 
 class PartyController extends Controller
 {
     public function index(){
-        $nome = "Matheus";
-        $idade = 29;
-     
-        return view('welcome',
-         ['nome'=> $nome, 'idade'=> $idade
-    
-    ]);
+       $reservas= Reserva::all();
+        return view('welcome',['reservas'=>$reservas]
+         );
 
         
     }
