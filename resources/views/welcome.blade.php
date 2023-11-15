@@ -7,8 +7,8 @@
         
   
         <br>
-<div id= "search-container" class="col-md-12">
-  <h2>Busque uma reserva</h2>
+<div id= "search-container"  class="col-md-12 container-fluid">
+  <h3>Busque uma reserva</h3>
   <form action="">
 <input type="text" id="search"  name="search" class="form-control" placeholder="Procurar...">
   </form>
@@ -16,11 +16,11 @@
 
 <div id= "reservas-container" class= "col-md-12">
   <h2>Próximas Festas </h2>
-  <p>Veja os eventos dos próximos dias</p>
+  <p class= "subtitle" >Veja os eventos dos próximos dias</p>
       <div id="cards-container" class= "row">
           @foreach ($reservas as $reserva)
               <div class="card col-md-3">
-    <img src="/img/banner.jpg", width="600px", height="400px" alt= "{{$reserva-> title}}">
+    <img src="/img/banner.jpg", width="300px", height="200px" alt= "{{$reserva-> title}}">
                     <div class= "card-body">
       <p class="card-date">10/11/2023</p>
       <h5 class="card-title">{{$reserva->title}}</h5>

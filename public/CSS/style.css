@@ -1,8 +1,188 @@
+/* General */
+
 h1 {
-    font-family: 'DM Sans'
+    font-size:100px;
+    font-family: 'DM Sans';
+    text-align: center;
+    color: #4fa8fb;
+    margin-top: 10px;
+    padding:0px;
+    margin: 0;
+    
 }
+
+body {
+
+min-height:100vh;
+padding-bottom:100px;
+position:relative;
+}
+
+header {
+background-color: #FFFF;
+border-bottom: 1px solid rgb(243, 243, 243);
+
+
+
+}
+
+.row{
+margin: 0;
+
+
+}
+
+.container-fluid{
+padding:0;
+
+}
+
+
+.btn.primary{
+
+    background-color: #f5cccc;
+    border: 2px solid #4fa8fb;
+    
+}
+
+.btn.primary::hover {
+
+background-color:#4fa8fb;
+border-color:#4fa8fb;
+
+
+}
+
 
 .navbar-brand img {
     width: 70px; 
     height: auto;
+}
+
+
+
+
+#navbar{
+justify-content:space-between;
+background-color: #FFFF;
+padding: 0px;
+margin:0px;
+}
+
+#navbar a {
+font-size: 17px;
+font-weight:bold;
+color:#fd7b8c
+
+}
+#navbar a:hover{
+    font-size: 19px;
+    color:rgb(127, 225, 255);
+
+
+}
+
+#search-container {
+background-image: url("../img/rainbow.png");
+background-size: cover;
+background-position:center;
+opacity: 0.8;
+height: 600px;
+padding: 30px;
+text-align: center;
+
+
+}
+
+#search-container h3 {
+ font-family: 'DM Sans';
+ color: #4fa8fb;
+ margin-top:20px;
+ margin-bottom: 60px;
+ font-weight: 900;
+
+}
+
+#search-container form {
+width:40%;
+margin: 0 auto;
+
+}
+
+#reservas-container {
+padding:50px;
+
+
+}
+
+#reservas-container h2{
+    margin-bottom:10px;
+
+}
+
+#reservas-container .subtitle{
+color: #757575;
+margin-bottom: 30px;
+
+}
+
+#cards-container{
+    display:flex;
+}
+
+#reservas-container .card {
+ flex: 1 1 0;
+ max-width:25%;
+ border-radius:10px;
+ padding:0;
+ margin: 5px;
+
+}
+
+#reservas-container img{
+
+max-height:300px;
+border-top-left-radius: 10px;
+border-top-right-radius:10px;
+
+}
+
+.card .card-date{
+font-size:12px;
+color: #ccc;
+
+
+}
+
+.card .card-title{
+color: #212121;
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.card-participants{
+font-size:14px;
+color:#757575;
+
+}
+
+footer {
+
+text-align:center;
+background-color: rgb(133, 200, 255);
+color:#2e2929;
+font-weight:bold;
+padding: 30px;
+position: absolute;
+bottom: 0;
+width: 100%;
+
+}
+
+footer p{
+margin-bottom: 0;
+
+
+
 }
