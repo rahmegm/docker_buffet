@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\PartyController;
+Route::get('/', [PartyController::class, 'index']);
+
+
+Route::get('/festas/create', [PartyController::class, 'create']);
+
+
+
+
+
+
